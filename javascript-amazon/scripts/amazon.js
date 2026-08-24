@@ -134,6 +134,7 @@ function updateCartQuantity(){
         cartQuantity+=cartItem.quantity;
     });
 
+
     document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
 
 }
@@ -143,5 +144,6 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) =>{
 
             addToCart(productId);
             updateCartQuantity();
+
            });
 });
